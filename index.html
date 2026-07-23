@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material de Cursos — EII PUCV</title>
+<style>
+  :root {
+    --ink: #14202b;
+    --paper: #f6f4ef;
+    --line: #c9c2b4;
+    --steel: #3d5a73;
+    --accent: #b5542a;
+    --muted: #6b6459;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Georgia", serif;
+    line-height: 1.55;
+  }
+
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding: 48px 24px 28px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin: 0 0 8px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .course {
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--steel);
+    background: #fffefb;
+    margin-bottom: 28px;
+    padding: 28px 28px 24px;
+  }
+
+  .course-code {
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 0 0 6px;
+  }
+
+  .course h2 {
+    margin: 0 0 4px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .course p.desc {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin: 0 0 18px;
+  }
+
+  ul.materials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  ul.materials li {
+    border-bottom: 1px solid var(--line);
+  }
+
+  ul.materials a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 11px 2px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  ul.materials a:hover {
+    color: var(--accent);
+  }
+
+  ul.materials a .tag {
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .empty-note {
+    font-size: 13.5px;
+    color: var(--muted);
+    font-style: italic;
+    padding: 4px 2px;
+  }
+
+  footer {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+  }
+
+  footer a { color: var(--steel); }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Escuela de Ingeniería Industrial — PUCV</p>
+  <h1>Material de cursos</h1>
+  <p class="subtitle">Apuntes, guías de trabajo y presentaciones para los cursos del profesor Franco Guidi Polanco.</p>
+</header>
+
+<main>
+
+  <section class="course">
+    <p class="course-code">EII 147</p>
+    <h2>Introducción a las Tecnologías de Información</h2>
+    <p class="desc">Ingeniería Civil Industrial.</p>
+    <ul class="materials">
+      <li><a href="eii147/README.md"><span>Cómo agregar material aquí</span><span class="tag">léeme</span></a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Publicado con GitHub Pages · <a href="https://github.com/francoguidip">francoguidip</a>
+</footer>
+
+</body>
+</html>
